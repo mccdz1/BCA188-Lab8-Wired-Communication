@@ -1,0 +1,16 @@
+# Compiled Arduino / ESP32 build artifacts
+build/
+*.hex
+*.bin
+*.elf
+*.o
+*.d
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code / IDE temp
+.vscode/
+.idea/
