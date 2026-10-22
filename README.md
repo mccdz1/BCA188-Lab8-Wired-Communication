@@ -88,6 +88,7 @@ PING
 PING
 PING
 ```
+<img width="600" height="179" alt="image" src="https://github.com/user-attachments/assets/3b7ddb5f-f85e-49fd-86a4-2e106325006d" />
 
 ### Sketch 2: $\text{I}^2\text{C}$ Scanner (`i2c_scanner/i2c_scanner.ino`)
 
