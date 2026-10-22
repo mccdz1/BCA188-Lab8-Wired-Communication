@@ -49,9 +49,8 @@ All GPIOs were chosen to avoid internal Octal Flash/PSRAM lines (GPIO 33–37) a
 ```
 
 ### Circuit Photo
-*(Place your breadboard circuit photo in `assets/circuit_setup.jpg`)*
+<img width="1152" height="2048" alt="image" src="https://github.com/user-attachments/assets/4d168da7-9cb8-4c10-8776-1379068aa5c3" />
 
-![Breadboard Circuit Setup](assets/circuit_setup.jpg)
 
 ---
 
