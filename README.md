@@ -78,60 +78,17 @@ All GPIOs were chosen to avoid internal Octal Flash/PSRAM lines (GPIO 33–37) a
 ### Sketch 2: $\text{I}^2\text{C}$ Scanner (`i2c_scanner/i2c_scanner.ino`)
 
 #### With Module:
-```text
-------------------------------------------
-       ESP32-S3 I2C Bus Scanner          
-------------------------------------------
-SDA Pin : GPIO 8
-SCL Pin : GPIO 9
-Scanning range: 0x01 to 0x7E...
-
-Found device at 0x27
-
-Scan complete. Devices found: 1
-==========================================
-```
 <img width="466" height="146" alt="image" src="https://github.com/user-attachments/assets/8b9b6ff0-b6eb-4a2a-9a00-cf47e7172a83" />
 
 #### Without Module:
-```text
-------------------------------------------
-       ESP32-S3 I2C Bus Scanner          
-------------------------------------------
-SDA Pin : GPIO 8
-SCL Pin : GPIO 9
-Scanning range: 0x01 to 0x7E...
-------------------------------------------
-No I2C devices found
-==========================================
-```
 <img width="355" height="144" alt="image" src="https://github.com/user-attachments/assets/8c22c6b4-507e-4cf0-8a3c-5bb130ad22bf" />
 
 ### Sketch 3: SPI Loopback (`spi_loopback/spi_loopback.ino`)
 
 #### With Jumper (GPIO 11 to GPIO 13):
-```text
-------------------------------------------
-        ESP32-S3 SPI Loopback Test        
-------------------------------------------
-SCK  : GPIO 12
-MOSI : GPIO 11
-MISO : GPIO 13
-CS   : GPIO 10
-Speed: 1 MHz | MSBFIRST | SPI Mode 0
-
-Sent 0xA5, received 0xA5
-Sent 0xA5, received 0xA5
-Sent 0xA5, received 0xA5
-Sent 0xA5, received 0xA5
-```
 <img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/3e27cc7d-e8a3-4016-b152-5ee2947bc3e8" />
 
 #### Without Jumper:
-```text
-Sent 0xA5, received 0x00
-Sent 0xA5, received 0x00
-```
 <img width="368" height="235" alt="image" src="https://github.com/user-attachments/assets/82e8f7f5-b9a1-4756-985c-7280aff8dd1e" />
 
 ---
