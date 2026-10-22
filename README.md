@@ -125,12 +125,14 @@ Sent 0xA5, received 0xA5
 Sent 0xA5, received 0xA5
 Sent 0xA5, received 0xA5
 ```
+<img width="400" height="240" alt="image" src="https://github.com/user-attachments/assets/3e27cc7d-e8a3-4016-b152-5ee2947bc3e8" />
 
 #### Without Jumper:
 ```text
 Sent 0xA5, received 0x00
 Sent 0xA5, received 0x00
 ```
+<img width="368" height="235" alt="image" src="https://github.com/user-attachments/assets/82e8f7f5-b9a1-4756-985c-7280aff8dd1e" />
 
 ---
 
