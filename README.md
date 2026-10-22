@@ -106,6 +106,7 @@ Found device at 0x27
 Scan complete. Devices found: 1
 ==========================================
 ```
+<img width="466" height="146" alt="image" src="https://github.com/user-attachments/assets/8b9b6ff0-b6eb-4a2a-9a00-cf47e7172a83" />
 
 #### Without Module:
 ```text
