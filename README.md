@@ -96,10 +96,10 @@ All GPIOs were chosen to avoid internal Octal Flash/PSRAM lines (GPIO 33–37) a
 ## 5. Answers to Laboratory Questions
 
 ### 1. Why does UART need both sides to use the same baud rate, while SPI uses a clock line?
-> **Answer:** UART is an asynchronous protocol without a shared clock line, meaning both transmitter and receiver must agree on the exact bit duration (baud rate) beforehand to sample incoming bits at predictable intervals. In contrast, SPI is synchronous and carries a dedicated clock line (`SCK`), allowing data bits to be sampled precisely on rising or falling clock edges regardless of preset timing.
+> **Answer:** Since UART doesn't share a clock wire, both boards have to agree on the exact speed beforehand so the receiver knows when to sample each incoming bit. SPI doesn't need to guess timing because it shares a dedicated clock line that acts like a metronome, telling the receiver to read a bit on every pulse.
 
 ### 2. Why can two devices with the same address not share one $\text{I}^2\text{C}$ bus?
-> **Answer:** $\text{I}^2\text{C}$ uses unique 7-bit device addresses broadcast across the shared open-drain serial data line (`SDA`). If two devices share the same address, both will acknowledge and attempt to drive the `SDA` line simultaneously, creating electrical bus contention and corrupted communications.
+> **Answer:** All devices on an $\text{I}^2\text{C}$ bus share the same data line, so they rely on their unique address to know who the master is calling. If two devices share an address, they'll both try to reply at the exact same moment, talking over each other and scrambling the signal.
 
 ### 3. Why is CS set HIGH between SPI transfers?
-> **Answer:** The Chip Select (`CS`/`SS`) line is active-LOW, so driving it HIGH deselects the slave peripheral, resets its internal SPI communication state machine, and places its `MISO` output line into a high-impedance (tri-state) condition so other devices can access the shared SPI bus cleanly.
+> **Answer:** SPI devices are active-LOW, meaning they only pay attention when their Chip Select line is pulled LOW. Setting CS back to HIGH tells the device to step aside and let the bus rest, resetting its internal state so it's ready for the next command.
