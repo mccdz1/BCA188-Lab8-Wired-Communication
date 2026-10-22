@@ -73,21 +73,6 @@ All GPIOs were chosen to avoid internal Octal Flash/PSRAM lines (GPIO 33–37) a
 ## 4. Serial Monitor Output Logs
 
 ### Sketch 1: UART Loopback (`uart_loopback/uart_loopback.ino`)
-```text
-==========================================
-       ESP32-S3 UART Loopback Test        
-==========================================
-TX Pin : GPIO 17
-RX Pin : GPIO 18
-Baud   : 9600 (8N1)
-Wiring : Connect GPIO 17 (TX) to GPIO 18 (RX)
-
-PING
-PING
-PING
-PING
-PING
-```
 <img width="600" height="179" alt="image" src="https://github.com/user-attachments/assets/3b7ddb5f-f85e-49fd-86a4-2e106325006d" />
 
 ### Sketch 2: $\text{I}^2\text{C}$ Scanner (`i2c_scanner/i2c_scanner.ino`)
@@ -120,6 +105,7 @@ Scanning range: 0x01 to 0x7E...
 No I2C devices found
 ==========================================
 ```
+<img width="355" height="144" alt="image" src="https://github.com/user-attachments/assets/8c22c6b4-507e-4cf0-8a3c-5bb130ad22bf" />
 
 ### Sketch 3: SPI Loopback (`spi_loopback/spi_loopback.ino`)
 
